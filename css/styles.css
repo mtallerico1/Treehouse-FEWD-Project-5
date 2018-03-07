@@ -403,7 +403,53 @@ template {
 [hidden] {
   display: none; }
 
+.grid__row {
+  padding: 2em; }
+
+.grid__col--2 {
+  display: flex; }
+
+.grid__col--3 {
+  display: flex; }
+
+.grid__col--4 {
+  display: flex; }
+
+.grid__col--5 {
+  display: flex; }
+
+.grid__col--6 {
+  display: flex; }
+
+.grid__col--7 {
+  display: flex; }
+
+.grid__col--8 {
+  display: flex; }
+
+.grid__col--9 {
+  display: flex; }
+
+.grid__col--10 {
+  display: flex; }
+
+.grid__col--11 {
+  display: flex; }
+
+.grid__col--12 {
+  display: flex; }
+
 p {
-  font: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  color: grey;
+  font: 0.8em/1.4 "Roboto", sans-serif; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=styles.css.map */
