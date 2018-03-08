@@ -1,16 +1,12 @@
 // Base Styles
 
-
+* {
+    box-sizing: border-box;
+}
 p {
     font-family: $secondary-font;
     color: $color-text-main;
     font: .8em/1.4 $secondary-font;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 a {

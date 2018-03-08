@@ -1,10 +1,11 @@
 .grid__row {
     padding: 2em;
+    
 }
 
 @for $i from 2 through 12 {
     .grid__col--#{$i} {
-        display: flex;
+       // @extend %flex-column;
     }
 }
     

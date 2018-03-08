@@ -1,0 +1,19 @@
+%center-content {
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+%flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+%no-style-list {
+    list-style: none;
+    padding-left: 0; 
+}
