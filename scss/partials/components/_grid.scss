@@ -1,11 +1,22 @@
 .grid__row {
-    padding: 2em;
     
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: $padding-standard;
 }
 
 @for $i from 2 through 12 {
     .grid__col--#{$i} {
-       // @extend %flex-column;
+    justify-items: center;
+       @if $i == 12 {
+           width: 100%;
+       }
+       @else if $i == 6 {
+           width: 100%;
+       }
     }
 }
     
