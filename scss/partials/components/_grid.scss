@@ -1,22 +1,24 @@
 .grid__row {
-    
+    @media (min-width: $break-mobile){
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .container {
     display: flex;
     flex-direction: column;
+    max-width: 1400px;
     padding: $padding-standard;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@for $i from 2 through 12 {
+@for $i from 3 through $grid-count {
     .grid__col--#{$i} {
-    justify-items: center;
-       @if $i == 12 {
-           width: 100%;
-       }
-       @else if $i == 6 {
-           width: 100%;
-       }
+        display: flex;
+        justify-content: center;
     }
 }
+
     

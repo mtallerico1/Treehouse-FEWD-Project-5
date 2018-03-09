@@ -1,19 +1,23 @@
 // Navigation
 
+.img--logo {
+    width: 150px;
+}
+
 
 .nav {
     @extend %no-style-list;
-    li {
+    a {
+        display: block;
+        font-family: $primary-font;
+        font-size: 1em;
+        color: $color-text-main;
         padding: .5em;
         text-align: center;
         border-radius: $radius;
         &:hover {
             background-color: $primary-color;
+            color: white;
         }
-    }
-    a {
-        font-family: $primary-font;
-        font-size: 1em;
-        color: $color-text-main;
     }
 }
