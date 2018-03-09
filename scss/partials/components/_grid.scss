@@ -17,7 +17,7 @@
 @for $i from 3 through $grid-count {
     .grid__col--#{$i} {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
     }
 }
 
