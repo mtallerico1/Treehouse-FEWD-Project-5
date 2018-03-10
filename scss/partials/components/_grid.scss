@@ -1,24 +1,15 @@
-.grid__row {
-    @media (min-width: $break-mobile){
-        display: flex;
-        flex-direction: row;
-    }
-}
+// ====================================
+// Grid Columns  
+// ====================================
 
-.container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1400px;
-    padding: $padding-standard;
-    margin-left: auto;
-    margin-right: auto;
-}
+// Calculate grid columns
 
-@for $i from 3 through $grid-count {
+@for $i from 1 through $grid-col-count {
+
+    $context: $grid-context($grid-col-width, $grid-col-count, $grid-gutter-width);
+    $target: ($grid-col-width * $i) + ($grid-gutter-width* ($i - 1));
+    // Generate column modifier classes
     .grid__col--#{$i} {
-        display: flex;
-        flex-direction: column;
+        width: percentage($target / $context);
     }
 }
-
-    
