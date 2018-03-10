@@ -12,7 +12,7 @@ nav {
         color: $color-text-main;
         border-radius: $radius;
         &:hover {
-            background-color: $primary-color;
+            background-color: $color-default;
             color: white;
         }
     }
