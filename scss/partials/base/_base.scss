@@ -2,11 +2,16 @@
 
 * {
     box-sizing: border-box;
+    border: red 1px solid;
 }
 p {
     font-family: $secondary-font;
     color: $color-text-main;
     font: .8em/1.4 $secondary-font;
+    a {
+        color: $secondary-color;
+        font-weight: bold;
+    }
 }
 
 a {

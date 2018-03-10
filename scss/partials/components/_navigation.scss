@@ -1,0 +1,19 @@
+nav {
+  
+}
+
+.nav {
+    @extend %no-style-list;
+    a {
+        font-family: $primary-font;
+        display: block;
+        text-align: center;
+        padding: .5em;
+        color: $color-text-main;
+        border-radius: $radius;
+        &:hover {
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+}

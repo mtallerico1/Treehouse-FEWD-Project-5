@@ -1,15 +1,56 @@
+.container {
+    padding: 1.5em;
+}
+
+.grid__row {
+    padding-bottom: 1em;
+    @media (min-width: 769px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }  
+}
+
+
+
 // ====================================
 // Grid Columns  
 // ====================================
 
 // Calculate grid columns
 
-@for $i from 1 through $grid-col-count {
-
-    $context: $grid-context($grid-col-width, $grid-col-count, $grid-gutter-width);
-    $target: ($grid-col-width * $i) + ($grid-gutter-width* ($i - 1));
-    // Generate column modifier classes
-    .grid__col--#{$i} {
-        width: percentage($target / $context);
+@media (min-width: 769px) {
+    @for $i from 1 through $grid-col-count {
+        $context: g-context($grid-col-width, $grid-col-count, $grid-gutter-width) !global;
+        $target: ($grid-col-width * $i) + ($grid-gutter-width* ($i - 1));
+        // Generate column modifier classes
+        .grid__col--#{$i} {
+            width: percentage($target / $context);
+            padding: .5em;
+            
+        }
     }
+
 }
+
+
+// Column styles
+
+// [class^="grid__col--"] {
+//     @media (min-width: 1px) and (max-width: 768px) {
+//         margin-top: em(12px);
+//         margin-bottom: em(12px);
+//     }
+
+//     @media (min-width: 769px) {
+//         @include double(percentage($grid-gutter-width / $context));
+//         float: left;
+//         min-height: 1px;
+//         padding-left: 10px;
+//         padding-right: 10px;
+//         &:last-of-type {
+//             float: right;
+//         }
+//     }
+// }
