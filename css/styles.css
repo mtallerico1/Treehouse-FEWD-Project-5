@@ -407,6 +407,11 @@ template {
   list-style: none;
   padding-left: 0; }
 
+[class^="img"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 h1 {
   font-family: "Lato", sans-serif;
   padding-left: .5em;
@@ -417,6 +422,14 @@ h4 {
   font-family: "Lato", sans-serif;
   font-size: .8em;
   color: grey; }
+
+blockquote {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: grey;
+  border-left: 5px solid #58e1c1;
+  border-radius: 4px;
+  padding-left: 1em; }
 
 .btn--default {
   display: block;
@@ -452,65 +465,72 @@ h4 {
 @media (min-width: 769px) {
   .grid__col--1 {
     width: 6.5%;
-    padding: .5em; }
+    padding: .5em;
+    border-radius: 4px; }
 
   .grid__col--2 {
     width: 15%;
-    padding: .5em; }
+    padding: .5em;
+    border-radius: 4px; }
 
   .grid__col--3 {
     width: 23.5%;
-    padding: .5em; }
+    padding: .5em;
+    border-radius: 4px; }
 
   .grid__col--4 {
     width: 32%;
-    padding: .5em; }
+    padding: .5em;
+    border-radius: 4px; }
 
   .grid__col--5 {
     width: 40.5%;
-    padding: .5em; }
+    padding: .5em;
+    border-radius: 4px; }
 
   .grid__col--6 {
     width: 49%;
-    padding: .5em; }
+    padding: .5em;
+    border-radius: 4px; }
 
   .grid__col--7 {
     width: 57.5%;
-    padding: .5em; }
+    padding: .5em;
+    border-radius: 4px; }
 
   .grid__col--8 {
     width: 66%;
-    padding: .5em; }
+    padding: .5em;
+    border-radius: 4px; }
 
   .grid__col--9 {
     width: 74.5%;
-    padding: .5em; }
+    padding: .5em;
+    border-radius: 4px; }
 
   .grid__col--10 {
     width: 83%;
-    padding: .5em; }
+    padding: .5em;
+    border-radius: 4px; }
 
   .grid__col--11 {
     width: 91.5%;
-    padding: .5em; }
+    padding: .5em;
+    border-radius: 4px; }
 
   .grid__col--12 {
     width: 100%;
-    padding: .5em; } }
-.img--logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.img--frame {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+    padding: .5em;
+    border-radius: 4px; } }
+[class^="img"] {
+  max-width: 100%; }
 
 .img--avatar {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+  padding: 1.5em; }
+
+.img--frame {
+  border: 1px solid gray;
+  padding: .5em; }
 
 .nav a {
   font-family: "Lato", sans-serif;
@@ -524,8 +544,7 @@ h4 {
     color: white; }
 
 * {
-  box-sizing: border-box;
-  border: red 1px solid; }
+  box-sizing: border-box; }
 
 p {
   font-family: "Roboto", sans-serif;

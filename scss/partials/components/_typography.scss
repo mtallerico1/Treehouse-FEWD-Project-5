@@ -16,3 +16,12 @@ h4 {
   font-size: .8em;
   color: $color-text-main;
 }
+
+blockquote {
+  font-family: $secondary-font;
+  font-style: italic;
+  color: $color-text-main;
+  border-left: 5px solid $primary-color;
+  border-radius: $radius;
+  padding-left: 1em;
+}

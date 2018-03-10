@@ -1,19 +1,16 @@
-.img--logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+
+[class^= "img"] {
+    max-width: 100%;
+    @extend %center-img;
+
 }
 
-.img--frame{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.img--avatar {
+    padding: 1.5em;
 }
 
-
-
-.img--avatar{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.img--frame {
+    border: 1px solid gray;
+    padding: .5em;
 }

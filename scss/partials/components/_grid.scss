@@ -28,7 +28,7 @@
         .grid__col--#{$i} {
             width: percentage($target / $context);
             padding: .5em;
-            
+            border-radius: $radius
         }
     }
 
