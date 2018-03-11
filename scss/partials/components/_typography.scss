@@ -4,24 +4,30 @@
 $primary-font: 'Lato', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
 
-h1 {
+.headline--primary {
   font-family: $primary-font; 
   padding-left: .5em;
   padding-right: .5em; 
   color: $color-default;
 }
 
-h4 {
+.headline--secondary {
   font-family: $primary-font; 
   font-size: .8em;
   color: $color-text-main;
 }
 
-blockquote {
+.blockquote {
   font-family: $secondary-font;
   font-style: italic;
   color: $color-text-main;
   border-left: 5px solid $color-default;
   border-radius: $radius;
   padding-left: 1em;
+}
+
+.link {
+  color: $color-secondary;
+  font-weight: bold;
+  @extend %text-decor-none;
 }

@@ -403,6 +403,9 @@ template {
 [hidden] {
   display: none; }
 
+.link, .nav a {
+  text-decoration: none; }
+
 .nav {
   list-style: none;
   padding-left: 0; }
@@ -412,18 +415,18 @@ template {
   margin-left: auto;
   margin-right: auto; }
 
-h1 {
+.headline--primary {
   font-family: "Lato", sans-serif;
   padding-left: .5em;
   padding-right: .5em;
   color: #58e1c1; }
 
-h4 {
+.headline--secondary {
   font-family: "Lato", sans-serif;
   font-size: .8em;
   color: grey; }
 
-blockquote {
+.blockquote {
   font-family: "Roboto", sans-serif;
   font-style: italic;
   color: grey;
@@ -431,25 +434,26 @@ blockquote {
   border-radius: 4px;
   padding-left: 1em; }
 
-.btn--default {
-  display: block;
-  width: 100%; }
+.link {
+  color: #51ddfc;
+  font-weight: bold; }
 
-.btn--success {
+.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
   display: block;
-  width: 100%; }
+  width: 100%;
+  padding: .5em;
+  margin-bottom: .5em;
+  border-radius: 4px;
+  color: white; }
 
-.btn--error {
-  display: block;
-  width: 100%; }
+.theme__colors {
+  background-color: #51ddfc; }
 
-.btn--warning {
-  display: block;
-  width: 100%; }
+.form__label--hidden {
+  display: none; }
 
-.btn--info {
-  display: block;
-  width: 100%; }
+.form__input {
+  border-bottom: 4px solid #58e1c1; }
 
 .container {
   padding: 1.5em; }
@@ -550,11 +554,5 @@ p {
   font-family: "Roboto", sans-serif;
   color: grey;
   font: 0.8em/1.4 "Roboto", sans-serif; }
-  p a {
-    color: #51ddfc;
-    font-weight: bold; }
-
-a {
-  text-decoration: none; }
 
 /*# sourceMappingURL=styles.css.map */

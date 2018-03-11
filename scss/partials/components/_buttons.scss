@@ -1,26 +1,32 @@
-.btn--default {
+%btn {
     display: block;
-    width: 100%
+    width: 100%;
+    padding: .5em; 
+    margin-bottom: .5em;
+    border-radius: $radius;
+    color: white;  
 }
     
+.btn--default {
+    @extend %btn;
+}
 
 .btn--success {
-    display: block;
-    width: 100%
+    @extend %btn;
 }
 
 .btn--error {
-    display: block;
-    width: 100%
+    @extend %btn;
 }
-.btn--warning {
-    display: block;
-    width: 100%
-}
-.btn--info {
-    display: block;
-    width: 100%
-}
-.theme__colors {
 
+.btn--warning {
+    @extend %btn;
+}
+
+.btn--info {
+    @extend %btn;
+}
+
+.theme__colors {
+    @include button__type(default);
 }

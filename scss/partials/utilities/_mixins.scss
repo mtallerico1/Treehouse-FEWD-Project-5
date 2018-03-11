@@ -12,3 +12,11 @@
    }
 }
 
+// Color
+
+@mixin button__type($color) {
+    @if $color == 'default' {
+        background-color: $color-secondary;
+        @content;
+    }
+}

@@ -1,6 +1,3 @@
-nav {
-  
-}
 
 .nav {
     @extend %no-style-list;
@@ -11,6 +8,7 @@ nav {
         padding: .5em;
         color: $color-text-main;
         border-radius: $radius;
+        @extend %text-decor-none;
         &:hover {
             background-color: $color-default;
             color: white;
