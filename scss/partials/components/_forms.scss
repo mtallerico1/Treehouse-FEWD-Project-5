@@ -1,7 +1,16 @@
-.form__label--hidden {
-    display: none;
-}
+// Form
 
-.form__input {
-    border-bottom: 4px solid $color-default;
+.form {
+
+    @inlcude e(label) {
+        @include m(hidden) {
+            display: none;
+        }
+    }
+
+    @include e(input) {
+        display: block;
+        margin-bottom: .8em;
+        border-bottom: 4px solid $color-default;
+    }
 }

@@ -403,7 +403,7 @@ template {
 [hidden] {
   display: none; }
 
-.link, .nav a {
+.link, .nav__item a {
   text-decoration: none; }
 
 .nav {
@@ -444,15 +444,15 @@ template {
   padding: .5em;
   margin-bottom: .5em;
   border-radius: 4px;
-  color: white; }
+  color: white;
+  border: none; }
 
-.theme__colors {
-  background-color: #51ddfc; }
-
-.form__label--hidden {
-  display: none; }
-
+@inlcude e(label) {
+  .form--hidden {
+    display: none; } }
 .form__input {
+  display: block;
+  margin-bottom: .8em;
   border-bottom: 4px solid #58e1c1; }
 
 .container {
@@ -536,14 +536,14 @@ template {
   border: 1px solid gray;
   padding: .5em; }
 
-.nav a {
+.nav__item a {
   font-family: "Lato", sans-serif;
   display: block;
   text-align: center;
   padding: .5em;
   color: grey;
   border-radius: 4px; }
-  .nav a:hover {
+  .nav__item a:hover {
     background-color: #58e1c1;
     color: white; }
 

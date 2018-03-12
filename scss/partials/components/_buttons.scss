@@ -5,6 +5,7 @@
     margin-bottom: .5em;
     border-radius: $radius;
     color: white;  
+    border: none;
 }
     
 .btn--default {
@@ -28,5 +29,5 @@
 }
 
 .theme__colors {
-    @include button__type(default);
+    
 }

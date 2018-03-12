@@ -1,17 +1,19 @@
 
 .nav {
     @extend %no-style-list;
-    a {
-        font-family: $primary-font;
-        display: block;
-        text-align: center;
-        padding: .5em;
-        color: $color-text-main;
-        border-radius: $radius;
-        @extend %text-decor-none;
-        &:hover {
-            background-color: $color-default;
-            color: white;
+    &__item {
+        a {
+            font-family: $primary-font;
+            display: block;
+            text-align: center;
+            padding: .5em;
+            color: $color-text-main;
+            border-radius: $radius;
+            @extend %text-decor-none;
+            &:hover {
+                background-color: $color-default;
+                color: white;
+            }
         }
     }
 }
