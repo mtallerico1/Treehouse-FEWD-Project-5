@@ -11,7 +11,7 @@
             border-radius: $radius;
             @extend %text-decor-none;
             &:hover {
-                background-color: $color-default;
+                background-color: $color-primary;
                 color: white;
             }
         }

@@ -8,7 +8,7 @@ $secondary-font: 'Roboto', sans-serif;
   font-family: $primary-font; 
   padding-left: .5em;
   padding-right: .5em; 
-  color: $color-default;
+  color: $color-primary;
 }
 
 .headline--secondary {
@@ -21,7 +21,7 @@ $secondary-font: 'Roboto', sans-serif;
   font-family: $secondary-font;
   font-style: italic;
   color: $color-text-main;
-  border-left: 5px solid $color-default;
+  border-left: 5px solid $color-primary;
   border-radius: $radius;
   padding-left: 1em;
 }

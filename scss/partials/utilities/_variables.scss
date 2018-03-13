@@ -1,12 +1,37 @@
 // Color
+$viking: #58e1c1;
+$malibu: #51ddfc;
+$harlequin: #2ada0a;
+$crimson: #e95b64;
+$flush-orange: #ff7b46;
+$electric-violet: #9376df;
 
-$color-default: #58e1c1;
-$color-secondary: #51ddfc;
-$color-success: #4bef2e;
-$color-error: #e21723;
-$color-warning: #ff7700;
-$color-info: #652aff;
+$color-primary: $viking;
+$color-secondary: $malibu;
 $color-text-main: grey;
+
+// Color Palette Modifiers
+
+$palletes: (
+    malibu : (
+        base: $malibu,
+        dark: darken($malibu, 20%)
+    ),
+    viking : (
+        base: $viking,
+        dark: darken($viking, 20%)
+    )
+) ;
+
+// UI Colors
+
+$ui-colors: (
+    default: $malibu,
+    success: $harlequin,
+    error: $crimson,
+    warning: $flush-orange,
+    info: $electric-violet
+);
 
 // Breakpoints
 $break-desktop: 769px;

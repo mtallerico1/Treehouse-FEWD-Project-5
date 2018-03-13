@@ -1,29 +1,8 @@
 // Media queries
-@mixin mq($break) {
-   @if $break  == 'mobile' {
-       @media (min-width: $break-mobile) {
-           @content
-       }
-   }
-   @else if $break =='desktop' {
-       @media (min-width: $break-mobile + 1) {
-           @content
-       } 
-   }
-}
 
 // Color
 
-@mixin button__type($color) {
-    @if $color == 'default' {
-        background-color: $color-secondary;
-        @content;
-    }
-    @else if $color == 'success' {
-        background-color: $color-success;
-        @content;
-    }
-}
+
 
 // BEM selectors
 
@@ -37,4 +16,13 @@
     &--#{$modifier} {
         @content
     }
+}
+
+
+// Flex
+
+@mixin flexy($flex, $wrap, $just) {
+    display: $flex;
+    flex-wrap: $wrap;
+    justify-content: $just;
 }

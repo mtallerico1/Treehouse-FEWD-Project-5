@@ -6,28 +6,18 @@
     border-radius: $radius;
     color: white;  
     border: none;
+    text-transform: uppercase;
 }
     
-.btn--default {
-    @extend %btn;
+.btn {
+    @include bg-colors($ui-colors);
 }
 
-.btn--success {
+[class^= "btn"] {
     @extend %btn;
+    &:hover {
+        opacity: .70;
+    }
 }
 
-.btn--error {
-    @extend %btn;
-}
 
-.btn--warning {
-    @extend %btn;
-}
-
-.btn--info {
-    @extend %btn;
-}
-
-.theme__colors {
-    
-}
