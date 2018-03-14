@@ -21,8 +21,7 @@
 
 // Flex
 
-@mixin flexy($flex, $wrap, $just) {
+@mixin flexy($flex, $dir) {
     display: $flex;
-    flex-wrap: $wrap;
-    justify-content: $just;
+    flex-direction: $dir;
 }

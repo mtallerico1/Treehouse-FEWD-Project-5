@@ -5,8 +5,7 @@
 .grid__row {
     padding-bottom: 1em;
     @media (min-width: 769px) {
-        display: flex;
-        flex-direction: row;
+        @include flexy(flex, row);
         justify-content: space-between;
 
     }  
@@ -19,6 +18,16 @@
 // ====================================
 
 // Calculate grid columns
+
+@media (max-width: 768px) {
+    [class^="grid__col"] {
+        padding: .6em;
+        margin-bottom: .5em;
+        border-radius: $radius;
+        font-family: $secondary-font;
+        color: $color-text-main;
+    }
+}
 
 @media (min-width: 769px) {
     @for $i from 1 through $grid-col-count {
@@ -35,22 +44,3 @@
 }
 
 
-// Column styles
-
-// [class^="grid__col--"] {
-//     @media (min-width: 1px) and (max-width: 768px) {
-//         margin-top: em(12px);
-//         margin-bottom: em(12px);
-//     }
-
-//     @media (min-width: 769px) {
-//         @include double(percentage($grid-gutter-width / $context));
-//         float: left;
-//         min-height: 1px;
-//         padding-left: 10px;
-//         padding-right: 10px;
-//         &:last-of-type {
-//             float: right;
-//         }
-//     }
-// }

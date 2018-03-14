@@ -7,6 +7,7 @@
  *    IE on Windows Phone and in iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Lato|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto");
 html {
   line-height: 1.15;
   /* 1 */
@@ -489,6 +490,13 @@ template {
       flex-direction: row;
       justify-content: space-between; } }
 
+@media (max-width: 768px) {
+  [class^="grid__col"] {
+    padding: .6em;
+    margin-bottom: .5em;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    color: grey; } }
 @media (min-width: 769px) {
   .grid__col--1 {
     width: 6.5%;

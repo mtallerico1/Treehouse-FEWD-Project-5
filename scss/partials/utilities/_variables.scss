@@ -1,3 +1,9 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+
+$primary-font: 'Lato', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
+
 // Color
 $viking: #58e1c1;
 $malibu: #51ddfc;
@@ -50,4 +56,4 @@ $radius: 4px;
 $grid-col-width: 65px;
 $grid-gutter-width: 20px;
 $grid-col-count: 12;
-$grid-cont-max-w: 1050px;
+
