@@ -491,12 +491,53 @@ template {
       justify-content: space-between; } }
 
 @media (max-width: 768px) {
-  [class^="grid__col"] {
-    padding: .6em;
-    margin-bottom: .5em;
-    border-radius: 4px;
-    font-family: "Roboto", sans-serif;
-    color: grey; } }
+  .grid__col--1 {
+    padding: .5em;
+    border-radius: 4px; }
+
+  .grid__col--2 {
+    padding: .5em;
+    border-radius: 4px; }
+
+  .grid__col--3 {
+    padding: .5em;
+    border-radius: 4px; }
+
+  .grid__col--4 {
+    padding: .5em;
+    border-radius: 4px; }
+
+  .grid__col--5 {
+    padding: .5em;
+    border-radius: 4px; }
+
+  .grid__col--6 {
+    padding: .5em;
+    border-radius: 4px; }
+
+  .grid__col--7 {
+    padding: .5em;
+    border-radius: 4px; }
+
+  .grid__col--8 {
+    padding: .5em;
+    border-radius: 4px; }
+
+  .grid__col--9 {
+    padding: .5em;
+    border-radius: 4px; }
+
+  .grid__col--10 {
+    padding: .5em;
+    border-radius: 4px; }
+
+  .grid__col--11 {
+    padding: .5em;
+    border-radius: 4px; }
+
+  .grid__col--12 {
+    padding: .5em;
+    border-radius: 4px; } }
 @media (min-width: 769px) {
   .grid__col--1 {
     width: 6.5%;

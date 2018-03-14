@@ -20,14 +20,24 @@
 // Calculate grid columns
 
 @media (max-width: 768px) {
-    [class^="grid__col"] {
-        padding: .6em;
-        margin-bottom: .5em;
-        border-radius: $radius;
-        font-family: $secondary-font;
-        color: $color-text-main;
+    // [class^="grid__col"] {
+    //     padding: .6em;
+    //     margin-bottom: .5em;
+    //     border-radius: $radius;
+    //     font-family: $secondary-font;
+    //     color: $color-text-main;
+    // }
+    @for $i from 1 through $grid-col-count {
+        // Generate column modifier classes
+        .grid__col--#{$i} {
+            padding: .5em;
+            border-radius: $radius;
+        }
     }
 }
+
+
+
 
 @media (min-width: 769px) {
     @for $i from 1 through $grid-col-count {
@@ -37,10 +47,9 @@
         .grid__col--#{$i} {
             width: percentage($target / $context);
             padding: .5em;
-            border-radius: $radius
+            border-radius: $radius;
         }
     }
 
 }
-
 
