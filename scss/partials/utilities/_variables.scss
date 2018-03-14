@@ -26,7 +26,12 @@ $palletes: (
     viking : (
         base: $viking,
         dark: darken($viking, 20%)
-    )
+    ),
+    default: $malibu,
+    success: $harlequin,
+    error: $crimson,
+    warning: $flush-orange,
+    info: $electric-violet
 ) ;
 
 // UI Colors
