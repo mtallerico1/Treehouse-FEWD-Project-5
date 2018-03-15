@@ -1,12 +1,22 @@
 %btn {
-    display: block;
-    width: 100%;
     padding: .5em; 
     margin-bottom: .5em;
     border-radius: $radius;
     color: white;  
     border: none;
+    font-family: $secondary-font;
+    font-size: .8em;
     text-transform: uppercase;
+    @include mq(mobile) {
+        display: block;
+        width: 100%;
+    }
+    @include mq(desktop) {
+        display: inline-block;
+        width: 150px;
+    }
+    
+    
 }
     
 .btn {

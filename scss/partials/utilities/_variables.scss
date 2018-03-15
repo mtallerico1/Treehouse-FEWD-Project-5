@@ -44,9 +44,21 @@ $ui-colors: (
     info: $electric-violet
 );
 
+// Theme Colors 
+
+$grid-theme-colors:(
+  3: $viking,
+  4: $malibu,
+  5: $harlequin,
+  6: $crimson,
+  7: $flush-orange,
+  8: $electric-violet,
+  12: darken($viking, 10%)
+);
+
 // Breakpoints
+$break-mobile: 768px;
 $break-desktop: 769px;
-$break-wide: 1400px;
 
 // Padding-Margins
 

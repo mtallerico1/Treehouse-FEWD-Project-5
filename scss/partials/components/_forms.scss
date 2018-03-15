@@ -1,6 +1,9 @@
 // Form
 
 .form {
+    .btn--default{
+        width: 100%;
+    }
     @include e(label) {
         @include m(hidden) {
             display: none;

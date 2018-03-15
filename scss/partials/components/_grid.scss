@@ -1,14 +1,18 @@
 .container {
     padding: 1.5em;
+    @include mq(desktop) {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .grid__row {
     padding-bottom: 1em;
-    @media (min-width: 769px) {
+    @include mq(desktop) {
         @include flexy(flex, row);
         justify-content: space-between;
-
-    }  
+    }
 }
 
 
@@ -19,37 +23,37 @@
 
 // Calculate grid columns
 
-@media (max-width: 768px) {
-    // [class^="grid__col"] {
-    //     padding: .6em;
-    //     margin-bottom: .5em;
-    //     border-radius: $radius;
-    //     font-family: $secondary-font;
-    //     color: $color-text-main;
-    // }
-    @for $i from 1 through $grid-col-count {
-        // Generate column modifier classes
-        .grid__col--#{$i} {
-            padding: .5em;
-            border-radius: $radius;
+@for $i from 1 through $grid-col-count {
+    $context: g-context($grid-col-width, $grid-col-count, $grid-gutter-width) !global;
+    $target: ($grid-col-width * $i) + ($grid-gutter-width* ($i - 1)) !global;
+    // Generate column modifier classes
+    .grid__col--#{$i} {
+        padding: .5em;
+        border-radius: $radius;
+        font-family: $secondary-font;
+        color: $color-text-main;
+        
+        @include mq(mobile) {
+            margin-bottom: 1em;
         }
-    }
-}
-
-
-
-
-@media (min-width: 769px) {
-    @for $i from 1 through $grid-col-count {
-        $context: g-context($grid-col-width, $grid-col-count, $grid-gutter-width) !global;
-        $target: ($grid-col-width * $i) + ($grid-gutter-width* ($i - 1));
-        // Generate column modifier classes
-        .grid__col--#{$i} {
+        @include mq(desktop) {
             width: percentage($target / $context);
-            padding: .5em;
-            border-radius: $radius;
+            @include flexy(flex, row);
+            justify-content: space-around;
+            
         }
     }
-
 }
 
+
+
+@each $num, $color in $grid-theme-colors {
+    .grid__col--#{$num}.theme__colors {
+      background-color: $color;
+    }
+  }
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}

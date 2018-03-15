@@ -1,15 +1,24 @@
 
 .nav {
     @extend %no-style-list;
+    @include mq(desktop){
+        @include flexy(flex, row);
+        justify-content: flex-end;
+    }
     &__item {
         a {
             font-family: $primary-font;
-            display: block;
             text-align: center;
             padding: .5em;
             color: $color-text-main;
             border-radius: $radius;
             @extend %text-decor-none;
+            @include mq(mobile) {
+                display: block;
+            }
+            @include mq(desktop) {
+                display: inline-block;
+            }
             &:hover {
                 background-color: $color-primary;
                 color: white;
