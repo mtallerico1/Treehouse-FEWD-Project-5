@@ -32,10 +32,7 @@
         border-radius: $radius;
         font-family: $secondary-font;
         color: $color-text-main;
-        
-        @include mq(mobile) {
-            margin-bottom: 1em;
-        }
+        margin-bottom: 1em;
         @include mq(desktop) {
             width: percentage($target / $context);
             @include flexy(flex, row);

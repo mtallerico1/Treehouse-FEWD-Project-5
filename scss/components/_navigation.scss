@@ -7,15 +7,13 @@
     }
     &__item {
         a {
+            display: block;
             font-family: $primary-font;
             text-align: center;
             padding: .5em;
             color: $color-text-main;
             border-radius: $radius;
             @extend %text-decor-none;
-            @include mq(mobile) {
-                display: block;
-            }
             @include mq(desktop) {
                 display: inline-block;
             }
